@@ -1,0 +1,906 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>ADO.NET_disconnected_1___MoreMonsters</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\aboleth.jpg" />
+    <None Remove="images\adult_black_dragon.jpg" />
+    <None Remove="images\adult_blue_dragon.jpg" />
+    <None Remove="images\adult_brass_dragon.jpg" />
+    <None Remove="images\adult_bronze_dragon.jpg" />
+    <None Remove="images\adult_copper_dragon.jpg" />
+    <None Remove="images\adult_gold_dragon.jpg" />
+    <None Remove="images\adult_green_dragon.jpg" />
+    <None Remove="images\adult_red_dragon.jpg" />
+    <None Remove="images\adult_silver_dragon.jpg" />
+    <None Remove="images\adult_white_dragon.jpg" />
+    <None Remove="images\air_elemental.jpg" />
+    <None Remove="images\ancient_black_dragon.jpg" />
+    <None Remove="images\ancient_blue_dragon.jpg" />
+    <None Remove="images\ancient_brass_dragon.jpg" />
+    <None Remove="images\ancient_bronze_dragon.jpg" />
+    <None Remove="images\ancient_copper_dragon.jpg" />
+    <None Remove="images\ancient_gold_dragon.jpg" />
+    <None Remove="images\ancient_green_dragon.jpg" />
+    <None Remove="images\ancient_red_dragon.jpg" />
+    <None Remove="images\ancient_silver_dragon.jpg" />
+    <None Remove="images\ancient_white_dragon.jpg" />
+    <None Remove="images\androsphinx.jpg" />
+    <None Remove="images\animated_armor.jpg" />
+    <None Remove="images\ankheg.jpg" />
+    <None Remove="images\archmage.jpg" />
+    <None Remove="images\axe_beak.jpg" />
+    <None Remove="images\azer.jpg" />
+    <None Remove="images\badger.jpg" />
+    <None Remove="images\balor.jpg" />
+    <None Remove="images\bandit_captain.jpg" />
+    <None Remove="images\barbed_devil.jpg" />
+    <None Remove="images\basilisk.jpg" />
+    <None Remove="images\bearded_devil.jpg" />
+    <None Remove="images\behir.jpg" />
+    <None Remove="images\black_pudding.jpg" />
+    <None Remove="images\blink_dog.jpg" />
+    <None Remove="images\bone_devil.jpg" />
+    <None Remove="images\bugbear.jpg" />
+    <None Remove="images\bulette.jpg" />
+    <None Remove="images\centaur.jpg" />
+    <None Remove="images\chain_devil.jpg" />
+    <None Remove="images\chimera.jpg" />
+    <None Remove="images\chuul.jpg" />
+    <None Remove="images\clay_golem.jpg" />
+    <None Remove="images\cloaker.jpg" />
+    <None Remove="images\cloud_giant.jpg" />
+    <None Remove="images\cockatrice.jpg" />
+    <None Remove="images\couatl.jpg" />
+    <None Remove="images\crocodile.jpg" />
+    <None Remove="images\cult_fanatic.jpg" />
+    <None Remove="images\darkmantle.jpg" />
+    <None Remove="images\death_dog.jpg" />
+    <None Remove="images\deva.jpg" />
+    <None Remove="images\dire_wolf.jpg" />
+    <None Remove="images\djinni.jpg" />
+    <None Remove="images\doppelganger.jpg" />
+    <None Remove="images\dragon_turtle.jpg" />
+    <None Remove="images\dretch.jpg" />
+    <None Remove="images\drider.jpg" />
+    <None Remove="images\drow.jpg" />
+    <None Remove="images\druid.jpg" />
+    <None Remove="images\dryad.jpg" />
+    <None Remove="images\duergar.jpg" />
+    <None Remove="images\dust_mephit.jpg" />
+    <None Remove="images\eagle.jpg" />
+    <None Remove="images\earth_elemental.jpg" />
+    <None Remove="images\efreeti.jpg" />
+    <None Remove="images\erinyes.jpg" />
+    <None Remove="images\ettercap.jpg" />
+    <None Remove="images\ettin.jpg" />
+    <None Remove="images\fire_elemental.jpg" />
+    <None Remove="images\fire_giant.jpg" />
+    <None Remove="images\flesh_golem.jpg" />
+    <None Remove="images\flying_snake.jpg" />
+    <None Remove="images\flying_sword.jpg" />
+    <None Remove="images\frog.jpg" />
+    <None Remove="images\frost_giant.jpg" />
+    <None Remove="images\gargoyle.jpg" />
+    <None Remove="images\gelatinous_cube.jpg" />
+    <None Remove="images\ghast.jpg" />
+    <None Remove="images\ghost.jpg" />
+    <None Remove="images\ghoul.jpg" />
+    <None Remove="images\giant_fire_beetle.jpg" />
+    <None Remove="images\giant_octopus.jpg" />
+    <None Remove="images\giant_spider.jpg" />
+    <None Remove="images\gibbering_mouther.jpg" />
+    <None Remove="images\glabrezu.jpg" />
+    <None Remove="images\gnoll.jpg" />
+    <None Remove="images\goblin.jpg" />
+    <None Remove="images\gorgon.jpg" />
+    <None Remove="images\gray_ooze.jpg" />
+    <None Remove="images\green_hag.jpg" />
+    <None Remove="images\grick.jpg" />
+    <None Remove="images\griffon.jpg" />
+    <None Remove="images\grimlock.jpg" />
+    <None Remove="images\guardian_naga.jpg" />
+    <None Remove="images\gynosphinx.jpg" />
+    <None Remove="images\half-red_dragon_veteran.jpg" />
+    <None Remove="images\harpy.jpg" />
+    <None Remove="images\hawk.jpg" />
+    <None Remove="images\hell_hound.jpg" />
+    <None Remove="images\hezrou.jpg" />
+    <None Remove="images\hill_giant.jpg" />
+    <None Remove="images\hippogriff.jpg" />
+    <None Remove="images\hobgoblin.jpg" />
+    <None Remove="images\homunculus.jpg" />
+    <None Remove="images\horned_devil.jpg" />
+    <None Remove="images\hydra.jpg" />
+    <None Remove="images\hyena.jpg" />
+    <None Remove="images\ice_devil.jpg" />
+    <None Remove="images\ice_mephit.jpg" />
+    <None Remove="images\imp.jpg" />
+    <None Remove="images\invisible_stalker.jpg" />
+    <None Remove="images\iron_golem.jpg" />
+    <None Remove="images\kobold.jpg" />
+    <None Remove="images\kraken.jpg" />
+    <None Remove="images\lamia.jpg" />
+    <None Remove="images\lemure.jpg" />
+    <None Remove="images\lich.jpg" />
+    <None Remove="images\lizardfolk.jpg" />
+    <None Remove="images\magma_mephit.jpg" />
+    <None Remove="images\magmin.jpg" />
+    <None Remove="images\manticore.jpg" />
+    <None Remove="images\marilith.jpg" />
+    <None Remove="images\mastiff.jpg" />
+    <None Remove="images\medusa.jpg" />
+    <None Remove="images\merfolk.jpg" />
+    <None Remove="images\merrow.jpg" />
+    <None Remove="images\mimic.jpg" />
+    <None Remove="images\minotaur.jpg" />
+    <None Remove="images\minotaur_skeleton.jpg" />
+    <None Remove="images\mummy.jpg" />
+    <None Remove="images\mummy_lord.jpg" />
+    <None Remove="images\nalfeshnee.jpg" />
+    <None Remove="images\nightmare.jpg" />
+    <None Remove="images\night_hag.jpg" />
+    <None Remove="images\noble.jpg" />
+    <None Remove="images\ochre_jelly.jpg" />
+    <None Remove="images\ogre.jpg" />
+    <None Remove="images\ogre_zombie.jpg" />
+    <None Remove="images\oni.jpg" />
+    <None Remove="images\orc.jpg" />
+    <None Remove="images\otyugh.jpg" />
+    <None Remove="images\owl.jpg" />
+    <None Remove="images\owlbear.jpg" />
+    <None Remove="images\pegasus.jpg" />
+    <None Remove="images\phase_spider.jpg" />
+    <None Remove="images\pit_fiend.jpg" />
+    <None Remove="images\planetar.jpg" />
+    <None Remove="images\plesiosaurus.jpg" />
+    <None Remove="images\pseudodragon.jpg" />
+    <None Remove="images\purple_worm.jpg" />
+    <None Remove="images\quasit.jpg" />
+    <None Remove="images\quipper.jpg" />
+    <None Remove="images\rakshasa.jpg" />
+    <None Remove="images\rat.jpg" />
+    <None Remove="images\raven.jpg" />
+    <None Remove="images\remorhaz.jpg" />
+    <None Remove="images\riding_horse.jpg" />
+    <None Remove="images\roc.jpg" />
+    <None Remove="images\roper.jpg" />
+    <None Remove="images\rug_of_smothering.jpg" />
+    <None Remove="images\rust_monster.jpg" />
+    <None Remove="images\sahuagin.jpg" />
+    <None Remove="images\salamander.jpg" />
+    <None Remove="images\satyr.jpg" />
+    <None Remove="images\scout.jpg" />
+    <None Remove="images\sea_hag.jpg" />
+    <None Remove="images\shadow.jpg" />
+    <None Remove="images\shambling_mound.jpg" />
+    <None Remove="images\shield_guardian.jpg" />
+    <None Remove="images\shrieker.jpg" />
+    <None Remove="images\skeleton.jpg" />
+    <None Remove="images\solar.jpg" />
+    <None Remove="images\specter.jpg" />
+    <None Remove="images\spider.jpg" />
+    <None Remove="images\spirit_naga.jpg" />
+    <None Remove="images\sprite.jpg" />
+    <None Remove="images\steam_mephit.jpg" />
+    <None Remove="images\stirge.jpg" />
+    <None Remove="images\stone_giant.jpg" />
+    <None Remove="images\stone_golem.jpg" />
+    <None Remove="images\storm_giant.jpg" />
+    <None Remove="images\succubus.jpg" />
+    <None Remove="images\swarm_of_bats.jpg" />
+    <None Remove="images\tarrasque.jpg" />
+    <None Remove="images\thug.jpg" />
+    <None Remove="images\treant.jpg" />
+    <None Remove="images\triceratops.jpg" />
+    <None Remove="images\troll.jpg" />
+    <None Remove="images\tyrannosaurus_rex.jpg" />
+    <None Remove="images\unicorn.jpg" />
+    <None Remove="images\vampire.jpg" />
+    <None Remove="images\vampire_spawn.jpg" />
+    <None Remove="images\violet_fungus.jpg" />
+    <None Remove="images\vrock.jpg" />
+    <None Remove="images\water_elemental.jpg" />
+    <None Remove="images\werebear.jpg" />
+    <None Remove="images\wereboar.jpg" />
+    <None Remove="images\wererat.jpg" />
+    <None Remove="images\weretiger.jpg" />
+    <None Remove="images\werewolf.jpg" />
+    <None Remove="images\wight.jpg" />
+    <None Remove="images\winter_wolf.jpg" />
+    <None Remove="images\wolf.jpg" />
+    <None Remove="images\worg.jpg" />
+    <None Remove="images\wraith.jpg" />
+    <None Remove="images\wyvern.jpg" />
+    <None Remove="images\xorn.jpg" />
+    <None Remove="images\young_black_dragon.jpg" />
+    <None Remove="images\young_blue_dragon.jpg" />
+    <None Remove="images\young_brass_dragon.jpg" />
+    <None Remove="images\young_bronze_dragon.jpg" />
+    <None Remove="images\young_copper_dragon.jpg" />
+    <None Remove="images\young_gold_dragon.jpg" />
+    <None Remove="images\young_green_dragon.jpg" />
+    <None Remove="images\young_red_dragon.jpg" />
+    <None Remove="images\young_silver_dragon.jpg" />
+    <None Remove="images\young_white_dragon.jpg" />
+    <None Remove="images\zombie.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\aboleth.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_black_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_blue_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_brass_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_bronze_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_copper_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_gold_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_green_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_red_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_silver_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\adult_white_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\air_elemental.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_black_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_blue_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_brass_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_bronze_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_copper_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_gold_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_green_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_red_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_silver_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ancient_white_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\androsphinx.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\animated_armor.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ankheg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\archmage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\axe_beak.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\azer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\badger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\balor.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\bandit_captain.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\barbed_devil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\basilisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\bearded_devil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\behir.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\black_pudding.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\blink_dog.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\bone_devil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\bugbear.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\bulette.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\centaur.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chain_devil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chimera.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\chuul.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\clay_golem.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cloaker.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cloud_giant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cockatrice.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\couatl.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\crocodile.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\cult_fanatic.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\darkmantle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\death_dog.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\deva.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dire_wolf.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\djinni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\doppelganger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dragon_turtle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dretch.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\drider.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\drow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\druid.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dryad.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\duergar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dust_mephit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\eagle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\earth_elemental.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\efreeti.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\erinyes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ettercap.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ettin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fire_elemental.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\fire_giant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flesh_golem.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flying_snake.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\flying_sword.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\frog.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\frost_giant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gargoyle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gelatinous_cube.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ghast.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ghost.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ghoul.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\giant_fire_beetle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\giant_octopus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\giant_spider.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gibbering_mouther.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\glabrezu.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gnoll.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\goblin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gorgon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gray_ooze.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\green_hag.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\grick.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\griffon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\grimlock.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\guardian_naga.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\gynosphinx.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\half-red_dragon_veteran.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\harpy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hawk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hell_hound.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hezrou.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hill_giant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hippogriff.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hobgoblin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\homunculus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\horned_devil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hydra.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\hyena.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ice_devil.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ice_mephit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\imp.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\invisible_stalker.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\iron_golem.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\kobold.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\kraken.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lamia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lemure.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lich.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\lizardfolk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\magma_mephit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\magmin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\manticore.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\marilith.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mastiff.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\medusa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\merfolk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\merrow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mimic.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\minotaur.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\minotaur_skeleton.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mummy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\mummy_lord.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\nalfeshnee.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\nightmare.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\night_hag.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\noble.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ochre_jelly.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ogre.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\ogre_zombie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\oni.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\orc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\otyugh.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\owl.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\owlbear.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pegasus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\phase_spider.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pit_fiend.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\planetar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\plesiosaurus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pseudodragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\purple_worm.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\quasit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\quipper.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\rakshasa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\rat.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\raven.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\remorhaz.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\riding_horse.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\roc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\roper.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\rug_of_smothering.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\rust_monster.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\sahuagin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\salamander.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\satyr.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\scout.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\sea_hag.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\shadow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\shambling_mound.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\shield_guardian.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\shrieker.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\skeleton.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\solar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\specter.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\spider.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\spirit_naga.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\sprite.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\steam_mephit.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\stirge.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\stone_giant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\stone_golem.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\storm_giant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\succubus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\swarm_of_bats.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tarrasque.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\thug.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\treant.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\triceratops.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\troll.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\tyrannosaurus_rex.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\unicorn.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\vampire.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\vampire_spawn.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\violet_fungus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\vrock.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\water_elemental.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\werebear.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wereboar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wererat.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\weretiger.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\werewolf.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wight.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\winter_wolf.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wolf.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\worg.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wraith.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\wyvern.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\xorn.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_black_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_blue_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_brass_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_bronze_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_copper_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_gold_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_green_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_red_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_silver_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\young_white_dragon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\zombie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonsterClassLibrary\MonsterClassLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

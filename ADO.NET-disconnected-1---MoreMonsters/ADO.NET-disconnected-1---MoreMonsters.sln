@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO.NET-disconnected-1---MoreMonsters", "ADO.NET-disconnected-1---MoreMonsters\ADO.NET-disconnected-1---MoreMonsters.csproj", "{EA16CD24-9255-450C-A1E4-190473E3B9D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterClassLibrary", "MonsterClassLibrary\MonsterClassLibrary.csproj", "{C53D00BE-2B4D-4D39-A5F0-2B0133EE1D78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA16CD24-9255-450C-A1E4-190473E3B9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA16CD24-9255-450C-A1E4-190473E3B9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA16CD24-9255-450C-A1E4-190473E3B9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA16CD24-9255-450C-A1E4-190473E3B9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53D00BE-2B4D-4D39-A5F0-2B0133EE1D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53D00BE-2B4D-4D39-A5F0-2B0133EE1D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53D00BE-2B4D-4D39-A5F0-2B0133EE1D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53D00BE-2B4D-4D39-A5F0-2B0133EE1D78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33D15F17-571D-4F02-8BED-A3EDDC9C98C7}
+	EndGlobalSection
+EndGlobal
