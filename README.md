@@ -40,6 +40,8 @@ Naast het filteren van bepaalde kolommen ga je ook sommige kolommen aanpassen: `
 
 Werk je oplossing uit in `CreateLegendaryMonsterDataTable()` en `CreateFlyingMonsterDataTable()`.
 
+<img src="images/2.png">
+
 # 4. DataGrid koppelen 
 Nu je de monsterDataTable hebt opgebouwd en verrijkt, ga je deze gegevens visualiseren in je WPF applicatie.
 
