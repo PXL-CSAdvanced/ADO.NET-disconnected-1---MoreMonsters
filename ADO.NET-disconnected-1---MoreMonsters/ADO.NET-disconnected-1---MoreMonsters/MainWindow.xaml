@@ -22,22 +22,19 @@
                 <DataGrid x:Name="AllMonstersDataGrid" 
                           AutoGenerateColumns="True"
                           SelectionChanged="MonsterSelectionChanged"
-                          Background="Black" 
-                          Foreground="White"/>
+                          Background="Black"/>
             </TabItem>
             <TabItem Header="Legendary Creatures">
                 <DataGrid x:Name="LegendaryDataGrid"
                           AutoGenerateColumns="True"
                           SelectionChanged="MonsterSelectionChanged"
-                          Background="Black" 
-                          Foreground="White"/>
+                          Background="Black"/>
             </TabItem>
             <TabItem Header="Flying Creatures">
                 <DataGrid x:Name="FlyingMonstersDataGrid"
                           AutoGenerateColumns="True"
                           SelectionChanged="MonsterSelectionChanged"
-                          Background="Black" 
-                          Foreground="White"/>
+                          Background="Black"/>
             </TabItem>
         </TabControl>
 
