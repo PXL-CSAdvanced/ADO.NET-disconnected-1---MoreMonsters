@@ -1,0 +1,151 @@
+﻿<Window x:Class="ADO.NET_disconnected_1___MoreMonsters.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADO.NET_disconnected_1___MoreMonsters"
+        mc:Ignorable="d"
+        Title="MonsterViewer" Height="450" Width="800" MinWidth="700">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition MinHeight="230" MaxHeight="270"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="280"/>
+            <ColumnDefinition MinWidth="280"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="3">
+            <TabItem Header="All Creatures">
+                <DataGrid x:Name="AllMonstersDataGrid" 
+                          AutoGenerateColumns="True"
+                          SelectionChanged="MonsterSelectionChanged"
+                          Background="Black"/>
+            </TabItem>
+            <TabItem Header="Legendary Creatures">
+                <DataGrid x:Name="LegendaryDataGrid"
+                          AutoGenerateColumns="True"
+                          SelectionChanged="MonsterSelectionChanged"
+                          Background="Black"/>
+            </TabItem>
+            <TabItem Header="Flying Creatures">
+                <DataGrid x:Name="FlyingMonstersDataGrid"
+                          AutoGenerateColumns="True"
+                          SelectionChanged="MonsterSelectionChanged"
+                          Background="Black"/>
+            </TabItem>
+        </TabControl>
+
+        <Grid Background="Black" Grid.Row="1" Grid.ColumnSpan="3"></Grid>
+        
+        <Viewbox Grid.Row="1" Grid.ColumnSpan="2"
+                    HorizontalAlignment="Left" VerticalAlignment="Top" MaxHeight="20" Margin="25 0">
+            <TextBlock x:Name="MonsterNameTextBlock" FontSize="20" Foreground="Red" FontWeight="Bold">Test Monster</TextBlock>
+        </Viewbox>
+
+        <Border Background="White" BorderBrush="Red" BorderThickness="3" CornerRadius="10" MaxWidth="500"
+                Grid.Row="1" Grid.Column="1" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="STR" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                            <TextBlock x:Name="MonsterSTRTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10 0">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="DEX" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                            <TextBlock x:Name="MonsterDEXTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="CON" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                            <TextBlock x:Name="MonsterCONTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="INT" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                            <TextBlock x:Name="MonsterINTTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10 0">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="WIS" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                            <TextBlock x:Name="MonsterWISTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="CHA" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                            <TextBlock x:Name="MonsterCHATextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Row="1">
+            <Border Background="White" BorderBrush="Red" BorderThickness="3" CornerRadius="10" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="500">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                        <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10 0">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Foreground="White" FontWeight="Bold" HorizontalAlignment="Center">AC</TextBlock>
+                                    <TextBlock Foreground="White">🛡️</TextBlock>
+                                </StackPanel>
+                                <TextBlock x:Name="MonsterACTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">10</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10 0">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="HP" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                    <TextBlock Foreground="White">❤️</TextBlock>
+                                </StackPanel>
+                                <TextBlock x:Name="MonsterHPTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">20</TextBlock>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10 0">
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="HP" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                    <TextBlock Foreground="White">👟</TextBlock>
+                                </StackPanel>
+                                <TextBlock x:Name="MonsterSpeedTextBlock" Foreground="Red" FontSize="16" FontWeight="Bold">30</TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+
+                    <Border Background="Black" BorderBrush="Red" BorderThickness="2" CornerRadius="10" Padding="10" Margin="10">
+                        <StackPanel>
+                            <TextBlock x:Name="AlignmentTextBlock" FontSize="14" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="SensesTextBlock" FontSize="14" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                            <TextBlock x:Name="LanguagesTextBlock" FontSize="14" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <!-- Image -->
+        <Border Background="White" Grid.Row="1" Grid.Column="2"  BorderBrush="Red" BorderThickness="5" CornerRadius="10" Margin="15">
+            <Image x:Name="MonsterImage" Stretch="Uniform" 
+                   Margin="10"
+                   Source="/images/aboleth.jpg"               
+                   />
+        </Border>
+    </Grid>
+</Window>
+
